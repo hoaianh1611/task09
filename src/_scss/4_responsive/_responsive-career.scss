@@ -1,0 +1,137 @@
+@include tab {
+    .c-career {
+        padding-top: 6.7%;
+
+        &__intro {
+            text-align: center;
+            margin-bottom: 4.2%;
+    
+            h2 {
+                font-size: 2.6rem;
+                letter-spacing: 1.3px;
+                line-height: 1.7;
+                margin-bottom: 3%;
+
+                span {
+                    letter-spacing: 1.4px;
+                }
+            } 
+    
+            p {
+                font-size: 1.4rem;
+                letter-spacing: 0.3px;
+                line-height: 1.78;
+                margin: 0 auto;
+            }
+
+            p:nth-of-type(2) {
+                width: 67%;
+            }
+
+        }
+
+        &__text {
+            max-width: 383px;
+            max-height: 443px;
+            top: 10.4%;
+            left: 2.5%;
+            padding: 4.6% 4% 2.9% 5.3%;
+
+            .c-text {
+                letter-spacing: 1.7px;
+                margin-bottom: 3.2%;
+                line-height: 1.46;
+            }
+
+            .c-text2 {
+                letter-spacing: 0.3px;
+                line-height: 1.8;
+            }
+
+            p:nth-of-type(1) {
+                margin-left: 0.1%;
+                margin-bottom: -0.1%;
+            }
+        }
+    }
+
+}
+
+@include sp {
+    .c-career {
+        padding-top: 9.6%;
+
+        &__intro {
+            text-align: left;
+            margin-bottom: 33px;
+            padding-left: 5.4%;
+            padding-right: 5%;
+    
+            h2 {
+                font-size: 2.4rem;
+                width: 95%;
+                letter-spacing: 1px;
+                line-height: 1.25;
+                margin-bottom: 4%;
+
+                span {
+                    letter-spacing: 1.2px;
+                }
+            } 
+    
+            p {
+                letter-spacing: 0.3px;
+                line-height: 1.57;
+            }
+
+            p:nth-of-type(1) {
+                margin-bottom: 0%;
+            }
+
+            p:nth-of-type(2) {
+                width: 100%;
+            }
+        }
+
+        &__bannerimg {
+            position: static;
+
+            img {
+                // width: auto;
+                max-height: 262px;
+                object-fit: cover;
+            }
+        }
+
+        &__text {
+            position: static;
+            padding: 9.6% 5% 2.9% 5.3%;
+            max-width: 100%;
+
+            .c-text {
+                letter-spacing: 1.2px;
+                margin-bottom: 3.8%;
+                width: 85%;
+                line-height: 1.25;
+            }
+
+            .c-text2 {
+                letter-spacing: 0.3px;
+                line-height: 1.6;
+            }
+
+            p:nth-of-type(1) {
+                margin-left: 0%;
+                margin-bottom: -0.2%;
+            }
+
+            p:nth-of-type(2) {
+                margin-bottom: -0.6%;
+            }
+
+            p:nth-of-type(3) {
+                margin-bottom: -0.4%;
+            }
+        }
+    }
+}

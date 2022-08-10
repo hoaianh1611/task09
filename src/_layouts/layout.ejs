@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      <%= (typeof title != "undefined" ? title : "Page title") %>
+    </title>
+    {{ meta }}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" >
+    <script type="module" src="/_scss/style.js"></script>
+    {{ head }}
+  </head>
+  <body>
+
+    <%- include('_partials/header'); -%>
+
+    {{ content }}
+
+    <%- include('_partials/footer'); -%>
+
+    {{ script }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+    <script src="../_public/assets/js/main.js"></script>
+  </body>
+</html>

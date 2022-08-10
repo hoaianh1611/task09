@@ -1,0 +1,139 @@
+@include tab {
+    .c-header {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 20px 8px;
+
+        &__logo {
+            position: absolute;
+            left: 20px;
+            
+            &::after {
+                bottom: -3.3%;
+                right: 11%;
+                letter-spacing: 0.1px;
+            }
+        }
+
+        &__navgroup {
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+        &__btn {
+            margin-left: auto;
+            max-width: 157px;
+            height: 40px;
+            margin-bottom: 29px;
+            padding: 0;
+            justify-content: space-evenly;
+
+            img {
+                margin-left: -3px;
+            }
+
+            p { 
+                margin-top: 5px;
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+                margin-left: -25px;
+            }
+        }
+
+        .c-gnav {
+            width: 100%;
+            padding-top: 4px;
+
+            ul {
+                justify-content: space-between;
+            }
+
+            li:first-child {
+                letter-spacing: -2.3px;
+                margin-left: 2.9%;
+            }
+        
+            li:nth-child(2) {
+                margin-left: -1.3%;
+                letter-spacing: -2px;
+                margin-right: 0;
+            }
+            
+            li:nth-child(3) {
+                letter-spacing: -1.5px;
+                margin-left: -2.4%;
+            }
+
+            li:nth-child(4) {
+                margin-right: -0.7%;
+                letter-spacing: -1.7px;
+            }
+        
+            li:last-child {
+                margin-right: 2.9%;
+            }
+        
+        }
+    }
+}
+
+@include sp {
+    .c-header {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 14px 10px 5px;
+
+        &__logo {
+            position: relative;
+            width: 123px;
+            height: 30px;
+            left: 0;
+
+            &::after {
+                font-size: 1rem;
+                bottom: -35%;
+                right: 9.3%;
+                letter-spacing: -0.1px;
+            }
+        }
+
+        &__btn {
+            max-width: 122px;
+            height: 38px;
+            margin-bottom: 0;
+            margin-right: 20px;
+
+            img {
+                margin-left: 1px;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-top: 0;
+                margin-left: -17px;
+            }
+        }
+
+        &__navgroup {
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        &__menuicon {
+            display: block;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        &__menuicon:hover {
+            opacity: 0.7;
+        }
+
+        .c-gnav {
+            position: fixed;
+            height: 100%;
+            width: 0;
+        }
+    }
+}

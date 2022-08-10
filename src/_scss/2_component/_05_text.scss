@@ -1,0 +1,33 @@
+/*------------------------------------------------------------
+text
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-text {
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: #0080cc;
+}
+
+.c-text2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #3c3c3c;
+}
+
+@include tab {
+    .c-text {
+        font-size: 3rem;
+    }
+
+    .c-text2 {
+        font-size: 1.4rem;
+    }
+}
+
+@include sp {
+    .c-text {
+        font-size: 2.4rem;
+    }     
+}
