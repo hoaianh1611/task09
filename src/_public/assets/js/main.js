@@ -8,3 +8,8 @@
 //     vertical: true,
 //     arrows: false
 // });
+
+// Modal
+$(".c-works__modalcontrol").click(function(){
+  $(this).parent().find(".c-works__modal").show();
+});
