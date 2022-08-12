@@ -163,3 +163,39 @@
 .u-p--itv02 {
     padding: 5.7% 9% 5.2% 8.1%;
 }
+
+@include tab {
+    .u-pdd1 {
+        padding: 2.9% 6.6% 8.5%;
+    }
+    
+    .u-pdd2 {
+        padding: 3% 8% 3.9% 6.7%;
+    }
+    
+    .u-pdd3 {
+        padding: 2.9% 6.5% 0.9% 6.7%;
+    }
+    
+    .u-pdd4 {
+        padding: 2.1% 7.4% 1.9% 6.6%;
+    }
+}
+
+@include sp {
+    .u-pdd1 {
+        padding: 2.1% 7.8% 1.9% 8.1%;
+    }
+    
+    .u-pdd2 {
+        padding: 4.9% 7.6% 4.8% 8.4%;
+    }
+    
+    .u-pdd3 {
+        padding: 4.7% 6.5% 4.2% 8.2%;
+    }
+    
+    .u-pdd4 {
+        padding: 4.5% 7.6% 4.7% 8.3%;
+    }
+}
