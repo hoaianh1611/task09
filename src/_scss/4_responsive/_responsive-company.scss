@@ -1,0 +1,69 @@
+@include tab {
+    .c-company {
+        margin: 6.7% auto 7.6%;
+
+        &__title {
+            padding-left: 0.4%;
+        }
+
+        &__table {
+            width: 95%;
+
+            table {
+                margin: 3.4% auto;
+                font-size: 1.4rem;    
+            }
+
+            th {
+                padding: 16px 19px 12px;
+                width: 30.5%;
+                letter-spacing: 0.1px;
+            }
+
+            td {
+                width: 443px;
+                padding: 15px 29px 13px;
+                line-height: 1.79;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+}
+
+@include sp {
+    .c-company {
+        margin: 8.9% auto 16%;
+
+        &__title {
+            margin-bottom: 8.5%;
+
+            h2 {
+                font-size: 2.4rem;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        &__table {
+            width: 95%;
+
+            table {
+                margin: 3.4% auto;
+                font-size: 1.4rem;    
+            }
+
+            th {
+                padding: 8px 9px 5px;
+                width: 100%;
+                letter-spacing: 0.1px;
+                display: inline-block;
+            }
+
+            td {
+                width: 100%;
+                padding: 13px 8px 11px;
+                line-height: 1;
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -7,25 +7,57 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
+.u-onlytab {
+    display: none;
+}
+
 .u-onlysp {
     display: none;
 }
-@include sp {
+
+.u-nottab {
+    display: block;
+}
+
+@include tab {
     .u-onlypc {
+        display: none;
+    }
+
+    .u-onlytab {
+        display: block;
+    }
+
+    .u-nottab {
+        display: none;
+    }
+
+    .u-onlysp {
+        display: none;
+    }
+}
+
+@include sp {
+    .u-notsp {
         display: none;
     }
 
     .u-onlysp {
         display: block;
     }
+
+    .u-nottab {
+        display: block;
+    }
 }
+
+
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Layout .l-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "1_layout/header";
 @import "1_layout/footer";
-@import "1_layout/sidebar";
 @import "1_layout/breadcrumb";
 @import "1_layout/layout";
 
@@ -33,24 +65,12 @@
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "2_component/01_btn";
-@import "2_component/02_title";
-@import "2_component/03_icon";
-@import "2_component/04_form";
 @import "2_component/05_text";
-@import "2_component/06_navi";
-@import "2_component/07_img";
-@import "2_component/08_list";
-@import "2_component/09_table";
-@import "2_component/10_line";
-@import "2_component/11_video";
-@import "2_component/12_slide";
-@import "2_component/99_other";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Project .p-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "3_project/top";
-@import "3_project/about";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Responsive
@@ -60,6 +80,10 @@
 @import "4_responsive/responsive-about";
 @import "4_responsive/responsive-works";
 @import "4_responsive/responsive-career";
+@import "4_responsive/responsive-interview";
+@import "4_responsive/responsive-recruit";
+@import "4_responsive/responsive-company";
+@import "4_responsive/responsive-footer";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-

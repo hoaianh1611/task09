@@ -1,29 +1,26 @@
 @include tab {
     .c-mainvisual {
         padding-top: 125px;
-        max-height: 911px;
+        min-height: 911px;
         height: 100vh;
 
         &__title {
             font-size: 4rem;
             top: -724.4%;
             left: 5.2%;
-            line-height: 1.67;
+            line-height: 1.65;
+            letter-spacing: 1.7px;
 
             span:nth-of-type(1) {
-                letter-spacing: 2.6px;
-                padding: 0 7px 0 8px;
+                padding: 0 10px 0 9px;
             }
 
             span:nth-of-type(2) {
-                letter-spacing: 1.8px;
-                padding: 0 12px 0 9px;
+                padding: 0 13px 0 9px;
             }
 
             span:nth-of-type(3) {
-                letter-spacing: 2px;
-                padding: 0 3px 0 9px;
-                line-height: 1.6;
+                padding: 0 4px 0 9px;
             }
         }
 
@@ -31,19 +28,19 @@
             max-width: 687px;
             max-height: 64px;
             font-size: 2.2rem;
-            padding: 14px 0 17px;
-            letter-spacing: 1.6px;
+            padding: 15px 0 17px;
+            letter-spacing: 1.7px;
 
             span {
                 margin-right: -8px;
-                margin-left: 6px;
+                margin-left: 0;
             }
         }
 
         &__scrollbtn {
-            top: -100.4%;
-            left: 45.7%;
-            letter-spacing: 1.3px;
+            top: -99.4%;
+            left: 45.8%;
+            letter-spacing: 1.2px;
 
             &::after {
                 top: 141%;
@@ -56,7 +53,7 @@
 @include sp {
     .c-mainvisual {
         padding-top: 67px;
-        max-height: 666px;
+        min-height: 666px;
     
         &__title {
             font-size: 2.8rem;

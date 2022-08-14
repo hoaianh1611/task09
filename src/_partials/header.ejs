@@ -1,28 +1,35 @@
 <header class="c-header">
-  <div class="c-header__logo">
-    <a href="<%= BASE_URL %>index.html">
-      <img src="/assets/img/logo.png" alt="Logo">
-    </a>
-  </div>
-  <div class="c-header__navgroup">
-    <div class="c-header__menuicon">
-      <img src="../_public/assets/img/menu.svg" alt="icon">
+  <div class="c-breadcrumb">
+    <div class="c-breadcrumb__logo">
+      <a href="<%= BASE_URL %>index.html">
+        <img src="/assets/img/logo.png" alt="Logo">
+      </a>
     </div>
-    <nav class="c-gnav">
-      <ul>
-        <% if (typeof linklists != 'undefined') { %>
-          <% linklists.main && linklists.main.forEach(link => { %>
-            <li>
-              <a class="u-anchor" <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            </li>
-          <% }) %>
-        <% } %>
-      </ul>
-    </nav>
-    <a href="#recruit" class="c-header__btn">
-      <img src="../_public/assets/img/assignment.svg" alt="icon">
-      <p>募集要項</p> 
-    </a>
+    <div class="c-breadcrumb__navgroup">
+      <div class="c-breadcrumb__menuicon">
+        <img class="c-menuopen" src="../_public/assets/img/menu.svg" alt="icon">
+        <img class="c-menuclose" src="../_public/assets/img/sp/close.svg" alt="icon">
+      </div>
+      <nav class="c-gnav">
+        <ul>
+          <% if (typeof linklists != 'undefined') { %>
+            <% linklists.main && linklists.main.forEach(link => { %>
+              <li>
+                <img class="u-onlysp" src="../_public/assets/img/sp/play_circle_filled_white.svg" alt="icon">
+                <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+              </li>
+            <% }) %>
+          <% } %>
+        </ul>
+        <a href="#recruit" class="c-breadcrumb__btn c-breadcrumb__btnmenu u-onlysp">
+          <img src="../_public/assets/img/assignment.svg" alt="icon">
+          <p>募集要項</p> 
+        </a>
+      </nav>
+      <a href="#recruit" class="c-breadcrumb__btn">
+        <img src="../_public/assets/img/assignment.svg" alt="icon">
+        <p>募集要項</p> 
+      </a>
+    </div>
   </div>
-  
 </header>

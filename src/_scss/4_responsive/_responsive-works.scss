@@ -32,11 +32,11 @@
 
         &__content {
             width: 61.5%;
-            padding: 51px 2.7% 0%;
+            padding: 52px 2.7% 0%;
         }
 
         &__intro {
-            margin-bottom: 4.9%;
+            margin-bottom: 4.6%;
     
             .c-text {
                 line-height: 1.67;
@@ -252,6 +252,26 @@
                 width: 100%;
                 max-height: 100px;
             }
+        }
+
+        &__modal {
+            padding: 0;
+        }
+
+        &__modalwrap {
+            max-width: 89.6%;
+            border: 2px solid #0080cc;
+            margin: 9.7% auto 0;
+            padding: 9.5% 5% 7.1%;
+
+            img {
+                margin: 0 auto 18px;
+            }
+        }
+
+        &__closebtn {
+            display: block;
+            margin: 0 auto;
         }
     }
 }

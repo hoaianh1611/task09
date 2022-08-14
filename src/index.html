@@ -7,15 +7,15 @@
 <!-- @content -->
 <main class="p-top">
   <section class="c-mainvisual">
-    <div class="c-mainvisual__mainbn c-zoominslider" id="c-slider">
-      <div class="c-mainvisual__banner c-mainvisual__banner01">
-        <div class="c-mainvisual__bannerbg c-mainvisual__bannerbg01"></div>  
+    <div class="c-mainslider c-zoominslider" id="c-jsmainslider">
+      <div class="c-mainslider__item c-mainslider__item01">
+        <div class="c-mainslider__itembg c-mainslider__itembg01"></div>
       </div>
-      <div class="c-mainvisual__banner c-mainvisual__banner02"> 
-        <div class="c-mainvisual__bannerbg c-mainvisual__bannerbg02"></div>  
+      <div class="c-mainslider__item c-mainslider__item02">
+        <div class="c-mainslider__itembg c-mainslider__itembg02"></div>
       </div>
-      <div class="c-mainvisual__banner c-mainvisual__banner03"> 
-        <div class="c-mainvisual__bannerbg c-mainvisual__bannerbg03"></div>  
+      <div class="c-mainslider__item c-mainslider__item03">
+        <div class="c-mainslider__itembg c-mainslider__itembg03"></div>
       </div>
     </div>
     <div class="c-mainvisual__inner">
@@ -31,7 +31,6 @@
       </p>
     </div>
   </section>
-
   <section id="about" class="c-about">
     <div class="c-about__bluebg"></div>
     <div class="l-container">   
@@ -52,7 +51,7 @@
       <div class="c-about__image">
         <div class="c-about__image1">
           <img src="./_public/assets/img/about1.jpg" alt="私たちについて">
-          <!-- <div class="u-frame"></div> -->
+          <div class="u-frame"></div>
         </div>
         <div class="c-about__image2">
           <img src="./_public/assets/img/about2.jpg" alt="私たちについて">
@@ -464,40 +463,38 @@
           <p>interview</p>
         </div>
         </div>
-        <div class="c-modal">
-          <div class="c-interview__modal">
-            <div class="c-interview__modalwrap">
-              <h2 class="c-interview__modaltitle">いつも明るく元気に作業。朝も一番に出勤してます！</h2>
-              <div class="c-interview__modaldisplay">
-                <div class="c-interview__modalimg">
-                  <img src="./_public/assets/img/interview01.jpg" alt="いつも明るく元気に作業。朝も一番に出勤してます！">
-                  <p class="c-interview__modaltxt">安川　聖 (30)<br><span>入社2年目・外構担当職人</span></p>
-                </div>
-                <div class="c-interview__modalcontent">
-                  <dl>
-                    <dt>Q. 仕事内容について教えてください</dt>
-                    <dd>外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチ　シャッター、フェンス、テラスなど、大小様々な工事を行っています。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 入社の決め手について教えてください</dt>
-                    <dd>もともとは営業や飲食業、アパレル関係の仕事をしていましたが、何か手に職をつけたいと思い、ENTEXに応募しました。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 仕事でやりがいを感じるときはどんな時ですか？</dt>
-                    <dd>入社2年目ということもあり、作業中などはあまり余裕を感じることはありませんが、現場の着工前と完成後を見るとやりがいを感じます。<br>また、完成後に自分が携わった現場を通りかかり、そこに住むひとたちが何気ない生活を送っている姿を見るのもやりがいを感じます。私たちの仕事は、世の中に残っていく仕事です。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 入社を希望される方に向けてメッセージをお願いします</dt>
-                    <dd>はっきり言って肉体労働では重いものを運びますし、夏は暑く、冬は寒いです。仕事自体は難しいですが、体力が無くても、不器用でも、信念をもって取り組めばこの仕事は務まると思います。そんな信念のあるひとを私たちはお待ちしています。</dd>
-                  </dl>
-                </div>
+        <div class="c-interview__modal c-modal">
+          <div class="c-interview__modalwrap c-modalwrap">
+            <h2 class="c-interview__modaltitle">いつも明るく元気に作業。朝も一番に出勤してます！</h2>
+            <div class="c-interview__modaldisplay">
+              <div class="c-interview__modalimg">
+                <img src="./_public/assets/img/interview01.jpg" alt="いつも明るく元気に作業。朝も一番に出勤してます！">
+                <p class="c-interview__modaltxt">安川　聖 (30)<br><span>入社2年目・外構担当職人</span></p>
               </div>
-              <button class="c-interview__closebtn c-modalclose">
-                <p>閉じる</p>
-              </button>
+              <div class="c-interview__modalcontent">
+                <dl>
+                  <dt>Q. 仕事内容について教えてください</dt>
+                  <dd>外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチ　シャッター、フェンス、テラスなど、大小様々な工事を行っています。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 入社の決め手について教えてください</dt>
+                  <dd>もともとは営業や飲食業、アパレル関係の仕事をしていましたが、何か手に職をつけたいと思い、ENTEXに応募しました。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 仕事でやりがいを感じるときはどんな時ですか？</dt>
+                  <dd>入社2年目ということもあり、作業中などはあまり余裕を感じることはありませんが、現場の着工前と完成後を見るとやりがいを感じます。<br>また、完成後に自分が携わった現場を通りかかり、そこに住むひとたちが何気ない生活を送っている姿を見るのもやりがいを感じます。私たちの仕事は、世の中に残っていく仕事です。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 入社を希望される方に向けてメッセージをお願いします</dt>
+                  <dd>はっきり言って肉体労働では重いものを運びますし、夏は暑く、冬は寒いです。仕事自体は難しいですが、体力が無くても、不器用でも、信念をもって取り組めばこの仕事は務まると思います。そんな信念のあるひとを私たちはお待ちしています。</dd>
+                </dl>
+              </div>
             </div>
+            <button class="c-interview__closebtn c-modalclose">
+              <p>閉じる</p>
+            </button>
           </div>
-        </div>  
+        </div>
       </div>
       <div class="c-interview__carditem">
         <div class="c-modalopen">
@@ -518,38 +515,36 @@
             <p>interview</p>
           </div>
         </div>
-        <div class="c-modal">
-          <div class="c-interview__modal">
-            <div class="c-interview__modalwrap">
-              <h2 class="c-interview__modaltitle">職長として土木・外構工事の現場管理をしながら作業指示</h2>
-              <div class="c-interview__modaldisplay">
-                <div class="c-interview__modalimg">
-                  <img src="./_public/assets/img/interview02.jpg" alt="職長として土木・外構工事の現場管理をしながら作業指示">
-                  <p class="c-interview__modaltxt">福元　和稔 (45)<br><span>入社3年目・土木、外構担当職長</span></p>
-                </div>
-                <div class="c-interview__modalcontent">
-                  <dl>
-                    <dt>Q. 仕事内容について教えてください</dt>
-                    <dd>外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチ　シャッター、フェンス、テラスなど、大小様々な工事を行っています。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 入社の決め手について教えてください</dt>
-                    <dd>ENTEXなら、自分の技術を発揮できると思ったからです</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 仕事でやりがいを感じるときはどんな時ですか？</dt>
-                    <dd>ENTEXなら、自分の技術を発揮できると思ったからです</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 入社を希望される方に向けてメッセージをお願いします</dt>
-                    <dd>たくさんの仲間と協力し合い、完成させていく楽しい職場だと思います。</dd>
-                  </dl>
-                </div>
+        <div class="c-interview__modal c-modal">
+          <div class="c-interview__modalwrap c-modalwrap">
+            <h2 class="c-interview__modaltitle">職長として土木・外構工事の現場管理をしながら作業指示</h2>
+            <div class="c-interview__modaldisplay">
+              <div class="c-interview__modalimg">
+                <img src="./_public/assets/img/interview02.jpg" alt="職長として土木・外構工事の現場管理をしながら作業指示">
+                <p class="c-interview__modaltxt">福元　和稔 (45)<br><span>入社3年目・土木、外構担当職長</span></p>
               </div>
-              <button class="c-interview__closebtn c-modalclose">
-                <p>閉じる</p>
-              </button>
+              <div class="c-interview__modalcontent">
+                <dl>
+                  <dt>Q. 仕事内容について教えてください</dt>
+                  <dd>外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチ　シャッター、フェンス、テラスなど、大小様々な工事を行っています。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 入社の決め手について教えてください</dt>
+                  <dd>ENTEXなら、自分の技術を発揮できると思ったからです</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 仕事でやりがいを感じるときはどんな時ですか？</dt>
+                  <dd>ENTEXなら、自分の技術を発揮できると思ったからです</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 入社を希望される方に向けてメッセージをお願いします</dt>
+                  <dd>たくさんの仲間と協力し合い、完成させていく楽しい職場だと思います。</dd>
+                </dl>
+              </div>
             </div>
+            <button class="c-interview__closebtn c-modalclose">
+              <p>閉じる</p>
+            </button>
           </div>
         </div>
       </div>
@@ -572,43 +567,41 @@
             <p>interview</p>
           </div>
         </div>
-        <div class="c-modal">
-          <div class="c-interview__modal">
-            <div class="c-interview__modalwrap">
-              <h2 class="c-interview__modaltitle">高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ</h2>
-              <div class="c-interview__modaldisplay">
-                <div class="c-interview__modalimg">
-                  <img src="./_public/assets/img/interview03.jpg" alt="高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ">
-                  <p class="c-interview__modaltxt">福元　和稔 (45)<br><span>入社3年目・土木、外構担当職長</span></p>
-                </div>
-                <div class="c-interview__modalcontent">
-                  <dl>
-                    <dt>Q. 仕事内容について教えてください</dt>
-                    <dd>外構工事と造園を担当しています。家の外周り、ブロック工事、フェンス工事、カーポート、ゲート取付工事、門柱、タイル工事、電気取付工事、ガレージコンクリート仕上げ、石張り工事、インターロッキング工事など様々な案件を手掛けています。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 入社の決め手について教えてください</dt>
-                    <dd>自分は大分県の田舎で育ったため、地元以外のところで就職したくて求人情報を見ていたら、EXTEX（旧：遠藤ブロック）社の求人票が目に留まりました。<br>他社と比べて給与等も好待遇だったため、入社を決めました。<br>入社した以上は一生懸命に仕事を覚えていこうと思いながら仕事をしていたら、あっという間に21年が経っていました。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 仕事でやりがいを感じるときはどんな時ですか？</dt>
-                    <dd>「想像していた以上に綺麗に仕上がっています」などお客様から直接お礼を言われた時や、自分の手掛けた物件が、カタログや各メーカーのサイトなどに掲載された時にやりがいを感じます。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Q. 入社を希望される方に向けてメッセージをお願いします</dt>
-                    <dd>
-                      <p>・一生懸命やれば、知恵が出る</p>
-                      <p>・いい加減だと言い訳ばかり</p>
-                      <p>・中途半端だと愚痴が出る</p>
-                      <p>入社を希望される方は、この言葉通りに一生懸命がんばってください。</p>
-                    </dd>
-                  </dl>
-                </div>
+        <div class="c-interview__modal c-modal">
+          <div class="c-interview__modalwrap c-modalwrap">
+            <h2 class="c-interview__modaltitle">高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ</h2>
+            <div class="c-interview__modaldisplay">
+              <div class="c-interview__modalimg">
+                <img src="./_public/assets/img/interview03.jpg" alt="高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ">
+                <p class="c-interview__modaltxt">福元　和稔 (45)<br><span>入社3年目・土木、外構担当職長</span></p>
               </div>
-              <button class="c-interview__closebtn c-modalclose">
-                <p>閉じる</p>
-              </button>
+              <div class="c-interview__modalcontent">
+                <dl>
+                  <dt>Q. 仕事内容について教えてください</dt>
+                  <dd>外構工事と造園を担当しています。家の外周り、ブロック工事、フェンス工事、カーポート、ゲート取付工事、門柱、タイル工事、電気取付工事、ガレージコンクリート仕上げ、石張り工事、インターロッキング工事など様々な案件を手掛けています。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 入社の決め手について教えてください</dt>
+                  <dd>自分は大分県の田舎で育ったため、地元以外のところで就職したくて求人情報を見ていたら、EXTEX（旧：遠藤ブロック）社の求人票が目に留まりました。<br>他社と比べて給与等も好待遇だったため、入社を決めました。<br>入社した以上は一生懸命に仕事を覚えていこうと思いながら仕事をしていたら、あっという間に21年が経っていました。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 仕事でやりがいを感じるときはどんな時ですか？</dt>
+                  <dd>「想像していた以上に綺麗に仕上がっています」などお客様から直接お礼を言われた時や、自分の手掛けた物件が、カタログや各メーカーのサイトなどに掲載された時にやりがいを感じます。</dd>
+                </dl>
+                <dl>
+                  <dt>Q. 入社を希望される方に向けてメッセージをお願いします</dt>
+                  <dd>
+                    <p>・一生懸命やれば、知恵が出る</p>
+                    <p>・いい加減だと言い訳ばかり</p>
+                    <p>・中途半端だと愚痴が出る</p>
+                    <p>入社を希望される方は、この言葉通りに一生懸命がんばってください。</p>
+                  </dd>
+                </dl>
+              </div>
             </div>
+            <button class="c-interview__closebtn c-modalclose">
+              <p>閉じる</p>
+            </button>
           </div>
         </div>
       </div>
@@ -624,22 +617,27 @@
             <h4 class="c-interview__texttitle">「学歴・経験不問。
               <span>ポテンシャル重視で採用」</span>
             </h4>
-            <p>弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっています。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向いて仕事が出来ます。</p>
+            <p>弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっています。<br class="u-onlysp">何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向いて仕事が出来ます。</p>
             <p>また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい職場作りを目指しております。<br>
             メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。</p>
-            <p>昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人にはなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。</p>
+            <p>昔のように職人は誰でもなれる職業ではありません。<br class="u-onlysp">身体も頭脳も健全でなければ一流の職人にはなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。</p>
           </div>
           <div class="c-interview__representimg">
-            <img src="./_public/assets/img/interview04.jpg" alt="⎡学歴・経験不問。
-            ポテンシャル重視で採用⎦">
+            <picture class="c-career__bannerimg">
+              <source media="(max-width:1023px)" srcset="./_public/assets/img/sp/endou.jpg">
+              <img src="./_public/assets/img/interview04.jpg" alt="⎡学歴・経験不問。ポテンシャル重視で採用⎦">
+            </picture>
           </div>
         </div>
         <div class="c-interview__representmess2">
-          <p class="c-interview__mess1">自分の作品として最低でも50年は施工場所が残る仕事です。<br>
-            大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br>
-            とても嬉しくて遣り甲斐のある仕事です。</p>
-          <p class="c-interview__mess2">
+          <p class="c-interview__mess1">自分の作品として最低でも50年は施工場所が残る仕事です。<br>大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br class="u-nottab">とても嬉しくて遣り甲斐のある仕事です。</p>
+          <p class="c-interview__mess2 u-onlypc">
             <span>株式会社ENTEX</span>
+            <span>代表取締役社長</span>
+            <span>遠藤 剛</span>
+          </p>
+          <p class="c-interview__mess2 u-onlytab">
+            <span>株式会社エンテックス</span>
             <span>代表取締役社長</span>
             <span>遠藤 剛</span>
           </p>
@@ -650,9 +648,18 @@
             <img src="./_public/assets/img/logo.png" alt="Logo">
           </div>
           <div class="c-interview__footerinfo">
-            <p><span>EN</span>当社代表「遠藤(Endo)」の頭文字</p>
-            <p><span>TE</span>テクノロジー(技術)</p>
-            <p><span>X</span>無限に成長すると言う意味のX</p>
+            <p>
+              <span class="c-interview__lang">EN</span>
+              <span class="c-interview__langinfo">当社代表「遠藤(Endo)」の頭文字</span>
+            </p>
+            <p>
+              <span class="c-interview__lang">TE</span>
+              <span class="c-interview__langinfo">テクノロジー(技術)</span>
+            </p>
+            <p>
+              <span class="c-interview__lang">X</span>
+              <span class="c-interview__langinfo">無限に成長すると言う意味のX</span>
+            </p>
           </div>
         </div>
       </div>
@@ -664,21 +671,21 @@
           data-aos="fade-up"
           data-aos-duration="2000">
       <h2>採用情報</h2>
-      <p>株式会社エンテックスでは、下記の人材を募集しています。<br>
+      <p>株式会社エンテックスでは、<br class="u-onlysp">下記の人材を募集しています。<br>
         詳しくは募集要項をご確認ください。</p>
     </div>
     <div id="tabs" class="c-recruit__table"
           data-aos="fade-up"
           data-aos-duration="2000">
       <div class="c-recruit__tabcontrol">
-        <div class="c-recruit__tabcontrolbtn1 c-tabactive">
+        <div onclick="openTab(event, 'c-tab1')" class="c-recruit__tabcontrolbtn c-recruit__tabcontrolbtn1 c-tabactive">
           <p>新卒採用</p>
         </div>
-        <div class="c-recruit__tabcontrolbtn2">
+        <div onclick="openTab(event, 'c-tab2')" class="c-recruit__tabcontrolbtn c-recruit__tabcontrolbtn2">
           <p>中途採用</p>
         </div>
       </div>
-      <div id="c-tab1" class="c-recruit__tabcontent c-recruit__tabcontent1">
+      <div  id="c-tab1" class="c-recruit__tabcontent c-recruit__tabcontent1 c-tabactive">
         <table>
           <tbody>
             <tr>
@@ -688,7 +695,7 @@
             <tr>
               <th>仕事内容</th>
               <td>
-              <p>外構工事、土木工事、各種工事<br>
+              <p>外構工事、土木工事、各種工事<br class="u-notsp">
                 各種解体業<br>
                 新築販売(設計・施工・販売)、リフォーム事業、宅地建物取引業</p>
               </td>
@@ -745,7 +752,7 @@
               <td>遠藤</td>
             </tr>
             <tr>
-              <th>応募者向け<br>メッセージ</th>
+              <th>応募者向け<br class="u-notsp">メッセージ</th>
               <td> 阪神間でNo.1を誇る外構･エクステリア業者です。お客様に喜ばれる仕事を理念に掲げ、即戦力となる社員育成を行っております。幅広い仕事をこなす事が出来、年に一度上司によるキャリアアップ等に関する面談、資格取得支援もありスキルアップのチャンスがあります。 </td>
             </tr>
         </tbody>
